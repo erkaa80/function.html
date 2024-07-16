@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1
+      const cityName = "Ulaanbaatar ";
+      console.log(cityName);
+      //2
+      const productName = "Airpods Pro 2";
+      let price = 250;
+      let discount = 37.6;
+      const currentPrice = price * (1 - discount / 100);
+      console.log(
+        "Wallmart дэлгүүрт " +
+          productName +
+          " бүтээгдэхүүн" +
+          price +
+          "$" +
+          "байснаас" +
+          discount +
+          "%" +
+          " хямдарч" +
+          currentPrice +
+          "$" +
+          "боллоо."
+      );
+      //3
+      const number1 = 24;
+      const number2 = 1;
+      const sum = number1 + number2;
+      console.log(number1 + "ба" + number2 + "тоонуудын нийлбэр нь" + sum);
+
+      //4
+      function calculateProblems(count) {
+        console.log(totalHours);
+      }
+      let problems = 3;
+      let problemsPerHour = 2;
+      let totalHours = problems * problemsPerHour;
+
+      //5
+      function favorite(name, food) {
+        console.log(name + "loves to eat" + food);
+      }
+      favorite("Sara", "pizza");
+
+      //6
+      function printweather(cityName, weather) {
+        console.log(cityName + "is" + weather);
+      }
+      printweather("Chicago", "32 C");
+
+      //7
+      function printBookDetails(title, author, yearPublished) {
+        console.log(author + "wrote" + title + "in" + yearPublished);
+      }
+      printBookDetails("Harry Potter", "J.K Rowling", "1997");
+
+      //8
+      function calculateArea(width, height) {
+        return width * height;
+      }
+      const area = calculateArea(10, 20);
+
+      console.log("Area: " + area);
+
+      //9
+      function calculateVolume(width, height, depth) {
+        return width * height * depth;
+      }
+      const volume = calculateVolume(10, 20, 30);
+      console.log("Volume: " + area);
+
+      //10
+      function prinTicketInfo(eventName, ticketPrice, discount) {
+        console.log(
+          "The ticket price for" +
+            eventName +
+            "is" +
+            ticketPrice +
+            "$," +
+            "but if you buy now you will get" +
+            discount +
+            "%" +
+            "discount."
+        );
+      }
+      const ticketInfo = prinTicketInfo("Taylor Swift's concert", 120, 20);
+    </script>
+  </body>
+</html>
